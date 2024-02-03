@@ -9,6 +9,18 @@ const useCountdown = (date) => {
   });
 
   const countdown = () => {
+    if (!date) return;
+
+    if (new Date(date) < new Date()) {
+      setTimeLeft({
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      });
+      return;
+    }
+
     const countdown = new Date(date).getTime();
     const now = new Date().getTime();
     const difference = countdown - now;
