@@ -1,0 +1,54 @@
+.home h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 2rem 1.5rem;
+}
+
+.countdown-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.countdown-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #bebebe;
+  border: 1px solid #aaa;
+  padding: 0.5rem;
+}
+
+.countdown-form label span {
+  font-weight: bold;
+  color: #333333;
+}
+
+.countdown-form label input {
+  border: none;
+  background-color: transparent;
+}
+
+.countdown-form label input:focus {
+  outline: none;
+}
+
+.countdown-form button {
+  align-self: center;
+  margin-top: 1rem;
+  background-color: #080404;
+  color: #fff;
+  font-weight: bold;
+  width: 120px;
+  padding: 0.8rem;
+  cursor: pointer;
+  opacity: 0.8;
+  border: none;
+  transition: 0.4s;
+}
+
+.countdown-form button:hover {
+  opacity: 1;
+}
