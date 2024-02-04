@@ -1,7 +1,11 @@
 import "./Title.css";
 
-const Title = ({ title }) => {
-  return <h1 className="title">{title}</h1>;
+const Title = ({ title, color }) => {
+  return (
+    <h1 className="title" style={{ color: color }}>
+      {title}
+    </h1>
+  );
 };
 
 export default Title;
