@@ -51,4 +51,10 @@
 
 .countdown-form button:hover {
   opacity: 1;
+  color: #61dbfb;
+}
+
+.countdown-form label span .required {
+  color: #cd2727;
+  font-weight: bold;
 }
